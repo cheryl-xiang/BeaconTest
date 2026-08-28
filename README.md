@@ -9,6 +9,9 @@ none...?
 
 # Beacon Overview
 
+### Functions
+...
+
 # Tutorial
 [add steps with demo on bar11]
 
