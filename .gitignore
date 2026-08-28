@@ -1,0 +1,16 @@
+# R project user settings
+.Rproj.user/
+
+# R history and data
+.Rhistory
+.RData
+.Ruserdata
+
+# compiled files
+*.o
+*.so
+*.dll
+
+# package build artifacts
+*.tar.gz
+*.Rcheck/
