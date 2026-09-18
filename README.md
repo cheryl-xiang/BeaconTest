@@ -32,12 +32,14 @@ hto_counts <- hto_counts[, !rownames(hto_count) %in% c('nUMI', 'nUMI_total')]   
 ## Step 2: Set Parameters
 Beacon has four tunable parameters with the following default values: 
 
+<div align="center">
 | Parameter | Default | Description |
 |-----------|---------|-------------|
 | sig_max | 3 | Maximum signal threshold |
 | min_count | 2 | Minimum count filter |
 | max_bf | 0.97 | Maximum Bayes factor |
 | max_iter | 30 | Maximum iterations |
+</div>
 
 ```
 params <- list()
