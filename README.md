@@ -2,7 +2,13 @@
 Beacon is an R package...
 
 ## Installation (R/Rstudio)
-devtools::install_github('cheryl-xiang/BeaconTest')
+```
+if (!require("devtools", quietly = TRUE))
+    install.packages("devtools")  # ensure devtools is installed correctly
+
+devtools::install_github('cheryl-xiang/BeaconTest') # install beacon
+library(deMULTIplex2) # load Beacon for use
+```
 
 ## Dependencies
 none...?
