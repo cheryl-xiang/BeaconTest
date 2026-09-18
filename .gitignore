@@ -20,3 +20,6 @@
 
 #Bar11 Scores
 data/bar11_scores.RData
+
+#ipynb checkpoints
+.ipynb_checkpoints
