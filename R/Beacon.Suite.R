@@ -1,6 +1,26 @@
 ######################
 #### Beacon calls #####
 ######################
+#' @param data A numeric matrix with HTOs as rows and cells as columns
+#' @param params A list of parameters with the following fields:
+#'   \itemize{
+#'     \item \code{sig_max} Maximum number of signal barcodes per cell (default 3)
+#'     \item \code{min_count} Minimum count threshold (default 2)
+#'     \item \code{max_bf} Maximum Bayes factor threshold for negatives (default 0.97)
+#'     \item \code{max_iter} Maximum number of iterations (default 30)
+#'   }
+#' @return A named numeric vector of assignments:
+#'   \itemize{
+#'     \item \code{1-N} Singlet assigned to sample N
+#'     \item \code{0} Negative
+#'     \item \code{1000} Doublet
+#'   }
+#' @export
+#' @examples
+#' \dontrun{
+#' params <- list(sig_max = 3, min_count = 2, max_bf = 0.97, max_iter = 30)
+#' calls <- beacon_calls(hto_count, params)
+#' }
 
 beacon_calls <- function(data,params){
   
