@@ -24,9 +24,9 @@ none...?
 The HTO count matrix should have HTOs as rows and cells as columns (transpose if necessary). Remove any extra non-HTO rows.
 
 ```
-hto_counts <- read.csv('path/to/barcode_matrix')                                   # Load data
-hto_counts <- t(hto_counts)                                                        # Transpose
-hto_counts <- hto_counts[, !rownames(hto_count) %in% c('nUMI', 'nUMI_total')]      # Remove non-HTOs
+hto_counts <- read.csv('path/to/barcode_matrix')                                # Load data
+hto_counts <- t(hto_counts)                                                     # Transpose
+hto_counts <- hto_counts[, !rownames(hto_count) %in% c('nUMI', 'nUMI_total')]   # Remove non-HTOs
 ```
 
 ## Step 2: Set Parameters
