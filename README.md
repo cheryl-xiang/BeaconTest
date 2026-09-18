@@ -7,7 +7,7 @@ if (!require("devtools", quietly = TRUE))
     install.packages("devtools")  # ensure devtools is installed correctly
 
 devtools::install_github('cheryl-xiang/BeaconTest') # install beacon
-library(deMULTIplex2) # load Beacon for use
+library(BeaconTest) # load Beacon for use
 ```
 
 ## Dependencies
